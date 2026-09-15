@@ -8,13 +8,15 @@
 </head>
 <body>
   <header>
-    <h1>Boussole</h1>
+    <h1 id="titre">🧭 Boussole</h1>
     <p>L’assistant de la formation Renforcement web. Réponses à règles pour l’instant, pas encore d’IA.</p>
   </header>
   <main>
     <section aria-labelledby="titre-chat">
       <h2 id="titre-chat">Discussion</h2>
+      <p id="accueil"></p>
       <ul id="messages" aria-live="polite" aria-label="Messages"></ul>
+      <div id="suggestions" role="group" aria-label="Questions suggérées"></div>
       <form id="chat-form">
         <label for="message">Votre message (280 caractères maximum)</label>
         <textarea id="message" name="message" rows="3" maxlength="280" required></textarea>
